@@ -1,0 +1,16 @@
+Exercise 3:	0x00007c32 is when code starts exectuing the 32-bit code. 
+		7d6b:	ff 15 18 00 01 00    	call   *0x10018; movw	$0x1234,0x472
+		f010000c
+		offset = (offset / SECTSIZE) + 1
+
+Exercise 6:	When entering from BIOS to Bootloader: 	0x100000:	0x00000000
+		After entering the Kernel: 		0x100000:	0x1badb002
+		This happens beacaue the after kernel is loaded the kernel.ld is loaded which links the 0x00100000 to 0x1badb002
+
+
+Exercise 7:	The paging gets enabled after mov %eax,%cr0
+
+Exercise 9: 	f0100034:	bc 00 00 11 f0       	mov    $0xf0110000,%esp
+		0xf0110000
+		.space		KSTKSIZE; 8x4096 = 32768
+		bootstacktop 
