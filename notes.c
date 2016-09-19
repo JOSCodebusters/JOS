@@ -19,3 +19,9 @@ page2kva(struct PageInfo *pp)
 /* This macro takes a physical address and returns the corresponding kernel
  * virtual address.  It panics if you pass an invalid physical address. */
 #define KADDR(pa) _kaddr(__FILE__, __LINE__, pa)
+
+enum {
+	// For page_alloc, zero the returned physical page.
+	ALLOC_ZERO = 1<<0,
+};
+
