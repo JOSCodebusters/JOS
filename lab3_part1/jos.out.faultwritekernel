@@ -1,0 +1,32 @@
++ ld obj/kern/kernel
++ mk obj/kern/kernel.img
+
+(process:24026): GLib-WARNING **: /build/glib2.0-7IO_Yw/glib2.0-2.48.1/./glib/gmem.c:483: custom memory allocation vtable not supported
+
+(process:24028): GLib-WARNING **: /build/glib2.0-7IO_Yw/glib2.0-2.48.1/./glib/gmem.c:483: custom memory allocation vtable not supported
+6828 decimal is 15254 octal!
+Physical memory: 66556K available, base = 640K, extended = 65532K
+check_page_alloc() succeeded!
+check_page() succeeded!
+check_kern_pgdir() succeeded!
+check_page_installed_pgdir() succeeded!
+[00000000] new env 00001000
+EAX=00000000 EBX=f0170536 ECX=00002d1f EDX=f03bb000
+ESI=f01705b6 EDI=00201000 EBP=f0117f88 ESP=f0117f7c
+EIP=f0103c6e EFL=00000006 [-----P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0010 00000000 ffffffff 00cf9300 DPL=0 DS   [-WA]
+CS =0008 00000000 ffffffff 00cf9a00 DPL=0 CS32 [-R-]
+SS =0010 00000000 ffffffff 00cf9300 DPL=0 DS   [-WA]
+DS =0010 00000000 ffffffff 00cf9300 DPL=0 DS   [-WA]
+FS =0023 00000000 ffffffff 00cff300 DPL=3 DS   [-WA]
+GS =0023 00000000 ffffffff 00cff300 DPL=3 DS   [-WA]
+LDT=0000 00000000 00000000 00008200 DPL=0 LDT
+TR =0028 f01777c0 00000067 00408900 DPL=0 TSS32-avl
+GDT=     f011a320 0000002f
+IDT=     f0176fa0 000007ff
+CR0=80050033 CR2=00201000 CR3=003bc000 CR4=00000000
+DR0=00000000 DR1=00000000 DR2=00000000 DR3=00000000 
+DR6=ffff0ff0 DR7=00000400
+EFER=0000000000000000
+Triple fault.  Halting for inspection via QEMU monitor.
+qemu: terminating on signal 15 from pid 23942
