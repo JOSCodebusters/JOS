@@ -1,0 +1,22 @@
++ ld obj/kern/kernel
++ mk obj/kern/kernel.img
+
+(process:21028): GLib-WARNING **: /build/glib2.0-7IO_Yw/glib2.0-2.48.1/./glib/gmem.c:483: custom memory allocation vtable not supported
+
+(process:21030): GLib-WARNING **: /build/glib2.0-7IO_Yw/glib2.0-2.48.1/./glib/gmem.c:483: custom memory allocation vtable not supported
+6828 decimal is 15254 octal!
+Physical memory: 66556K available, base = 640K, extended = 65532K
+check_page_alloc() succeeded!
+check_page() succeeded!
+check_kern_pgdir() succeeded!
+check_page_installed_pgdir() succeeded!
+size of struct Segdesc=8
+SMP: CPU 0 found 2 CPU(s)
+enabled interrupts: 1 2
+SMP: CPU 1 starting
+size of struct Segdesc=8
+[00000000] new env 00001000
+kernel panic on CPU 1 at kern/trap.c:345: handle kernel-mode page faults
+Welcome to the JOS kernel monitor!
+Type 'help' for a list of commands.
+qemu: terminating on signal 15 from pid 20944
